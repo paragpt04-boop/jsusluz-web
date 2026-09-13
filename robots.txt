@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-# Add Sitemap after the final production domain is connected.
+Sitemap: https://jsusluz-web.pages.dev/sitemap.xml
