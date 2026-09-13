@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JsusLuz | Simulador de consumo eléctrico</title>
+<meta name="description" content="Simula el consumo y costo eléctrico de tus equipos por día y hasta 30 días.">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/app.js"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">⚡ JsusLuz</a><nav><a href="#simulador">Simulador</a><a href="#dias">Día a día</a><a href="como-funciona.html">Cómo funciona</a></nav></header>
+<main>
+<section class="hero"><span class="pill">Simulador educativo</span><h1>Entiende cuánto consume tu electricidad.</h1><p>Agrega tus equipos, calcula kWh y estima el costo. Mira el resultado día por día hasta un máximo de 30 días.</p><a class="cta" href="#simulador">Comenzar simulación</a></section>
+<div class="ad" data-tip="Espacio preparado para publicidad. Cuando AdSense sea aprobado, aquí se puede insertar un bloque de anuncios.">Espacio publicitario</div>
+<section id="simulador" class="panel" data-tip="Aquí introduces los datos del equipo eléctrico que quieres simular."><h2>Simulador</h2><div class="grid"><label>Equipo<input id="name" value="Aire acondicionado"></label><label>Potencia (W)<input id="watts" type="number" min="1" value="1200"></label><label>Horas por día<input id="hours" type="number" min="0" max="24" step="0.5" value="8"></label><label>Costo por kWh ($)<input id="rate" type="number" min="0" step="0.001" value="0.25"></label><label>Días (1–30)<input id="days" type="number" min="1" max="30" value="30"></label></div><button id="calc">Calcular</button><div id="summary" class="summary"></div></section>
+<section id="dias" class="panel" data-tip="Este apartado desglosa el consumo acumulado y el costo de cada día de la simulación."><div class="section-head"><div><span class="eyebrow">Detalle</span><h2>Estadísticas día por día</h2></div><span id="dayCount" class="pill">30 días</span></div><div id="daily" class="daily"></div></section>
+<div class="ad">Espacio publicitario</div>
+<section class="info"><h2>¿Para qué sirve?</h2><p>JsusLuz es una herramienta orientativa para visualizar cómo la potencia, las horas de uso y la tarifa influyen en el consumo. Los resultados son estimaciones y no sustituyen una factura ni una medición del proveedor eléctrico.</p></section>
+</main>
+<footer><div>© 2026 JsusLuz</div><div><a href="privacidad.html">Privacidad</a><a href="terminos.html">Términos</a><a href="contacto.html">Contacto</a></div></footer>
+<div id="tooltip" class="tooltip"></div>
+</body></html>
